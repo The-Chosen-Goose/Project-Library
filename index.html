@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="main.js"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <div>Virtual Library</div>
+            <div class="logs">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <div class="collection"></div>
+        <div class="footer">
+            <div><a href="https://github.com/The-Chosen-Goose" target="_blank">The-Chosen-Goose |</a> <img src="css/git.png" id="github"></div>
+            <button id="openform">Add Book <img src="https://www.svgrepo.com/show/522437/plus.svg" alt=""></button>
+        </div>
+    </div>
+    <div class="popup">
+        <button class="close" id="closebtn">&times;</button>
+        <div class="form">
+            <form>
+                <div><label for="bookname">Book Name</label><input id="bookname" type="text" required></div>
+                <div><label for="author">The author</label><input id="author" type="text" required></div>
+                <div><label for="pages">Number of pages</label><input id="pages" type="number" required></div>
+                <div><input id="read" type="checkbox" ><label for="read">Have you read it ?</label></div>
+            </form>
+            <button id="savebook">Save</button>
+        </div>
+    </div>
+    <div id="overlay"></div>
+</body>
+</html>
